@@ -38,4 +38,5 @@ Before running, replace the email address in the `Entrez.email` line of the note
 Python, Biopython, NumPy, Matplotlib, Jupyter
 
 ## Next steps
-- [One or two things you'd try next, e.g. other window sizes or another bacterium]
+- Compare different window sizes (1 kb to 50 kb) and see how the curve and the estimates change
+- Repeat the analysis on another bacterium, such as Bacillus subtilis, and compare the skew pattern
