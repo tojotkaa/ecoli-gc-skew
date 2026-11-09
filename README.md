@@ -1,6 +1,4 @@
-# E. coli GC skew
 # GC skew analysis of the E. coli genome
-
 Finding the origin of DNA replication in the *E. coli* K-12 MG1655 genome
 using cumulative GC skew, with Python and Biopython.
 
@@ -20,9 +18,7 @@ along the genome gives a curve that changes direction at the origin
 ## Result
 ![Cumulative GC skew](results/gc_skew.png)
 
-The minimum of the curve is at about [X.XX] Mb and the maximum at about
-[X.XX] Mb. [One sentence comparing this with the annotated oriC position
-on NCBI: how close was it, and why might it differ?]
+The minimum of the curve is at about 3.92 Mb and the maximum at about 1.54 Mb. The minimum matches the annotated origin of replication (oriC) of E. coli K-12 MG1655 at roughly 3.92 Mb. The maximum falls near the terminus region, which the genome map places at around 1.6-1.7 Mb. The terminus estimate is less precise than the origin, and both depend on the 10 kb window size. GC skew here is calculated as (G-C)/(G+C).
 
 ## How to run it
 ```
@@ -36,6 +32,7 @@ jupyter notebook
 ```
 Open `notebooks/gc_skew.ipynb` and run all cells. The genome is downloaded
 automatically.
+Before running, replace the email address in the `Entrez.email` line of the notebook with your own (NCBI requires one).
 
 ## Tools
 Python, Biopython, NumPy, Matplotlib, Jupyter
